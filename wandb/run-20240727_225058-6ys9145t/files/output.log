@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/workspace/rtp/CF-PepMLM/train.py", line 18, in <module>
+    tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+NameError: name 'AutoTokenizer' is not defined
