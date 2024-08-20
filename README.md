@@ -29,13 +29,11 @@ The model architecture is based on the ChemBERTa model with options for using Lo
 
 The loss function used is the standard cross-entropy loss for masked language modeling. The loss is computed only on the peptide sequence, excluding the polymer and the separator token.
 
-Mathematically, the loss \( \mathcal{L} \) is defined as:
+Mathematically, the loss $$ \mathcal{L} $$ is defined as:
 
-\[
+$$
 \mathcal{L} = -\sum_{t=1}^{T} y_t \log(\hat{y}_t)
-\]
-
-where \( y_t \) is the true label (or one-hot encoded vector) at position \( t \), and \( \hat{y}_t \) is the predicted probability distribution over tokens at position \( t \).
+$$
 
 ## Configuration
 
